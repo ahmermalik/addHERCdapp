@@ -14,7 +14,7 @@ class App extends Component {
         <a className="github-banner" href="https://github.com/MetaMask/Add-Token"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
         <Web3Provider
           web3UnavailableScreen={() => <div>
-            <p>You need a web3 browser like MetaMask to use this site and manage cryptocurrencies.</p>
+            <p>You need MetaMask installed</p>
             <DownloadMetaMaskButton/>
           </div>}
         >

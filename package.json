@@ -2,7 +2,6 @@
   "name": "token-adder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://github.com/hercone/addHERCdapp",
   "dependencies": {
     "@material-ui/core": "^3.0.0",
     "etherscan-link": "^1.0.3",
@@ -30,5 +29,6 @@
   },
   "devDependencies": {
     "gh-pages": "^1.2.0"
-  }
+  },
+  "homepage": "./"
 }
