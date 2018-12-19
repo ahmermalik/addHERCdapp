@@ -1,7 +1,4 @@
 .App {
-  text-align: center;
-  margin: 0 auto;
-  /* width: 100%; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -13,6 +10,12 @@
 }
 
 .App-title {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
   font-size: 1.5em;
   color: white;
   border-style: solid;
@@ -22,15 +25,14 @@
   padding-bottom: 15px;
 }
 .CoinInfoContainer{
-  display: inline-flex;
   text-align: center;
-  padding-top: 80px;
-  width: 25%;
+  padding: 80px 50px 0px 50px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.addTokenPanelContainer{
-  min-width: 100%;
-}
+
 
 .App-footer{
   position: fixed;
@@ -46,8 +48,8 @@
 
 }
 .buttonRow{
-  display:flex;
-  justify-content:center;
+  display:inline-flex;
+  /* justify-content:center; */
   padding-top:10px;
 }
 

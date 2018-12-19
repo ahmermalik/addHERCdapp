@@ -102,7 +102,7 @@ class AddTokenPanel extends Component {
             </TableRow>
           </TableBody>
         </Table>
-        </div>
+      
         <div className="buttonRow">
           <Button
             onClick={() => {
@@ -144,7 +144,7 @@ class AddTokenPanel extends Component {
             }}
           >Watch in Wallet</Button>
          
-
+         </div>
         </div>
 
         <p>{message}</p>
