@@ -10,7 +10,7 @@ const schema = {
     tokenAddress: {type: "string", title: "Token Address", required: true},
     tokenSymbol: {type: "string", title: "Token Symbol", default: "TKN", required: true},
     tokenDecimals: {type: "number", title: "Token Decimals", default: 18, required: true},
-    tokenNet: {type: "number", title: "Token Network Id", default: 1, required: true},
+    tokenNet: {type: "number", title: "Token Network ID", default: 1, required: true},
     // tokenImage: {type: "string", title: "Token Image URL (optional)", required: false},
   }
 };
@@ -25,7 +25,7 @@ class EditTokenPanel extends Component {
   render() {
     return (
       <div className="my-form">
-        <h1 className="App-title">Enter Address</h1>
+        <div className="App-title">Enter Address</div>
 
         <div className="form-content">
           { Object.keys(schema.properties).map((key) => {
@@ -37,6 +37,7 @@ class EditTokenPanel extends Component {
                   errormessage={this.state[key + 'Error']}
                   label={schema.properties[key].title}
                   margin="normal"
+                  fullWidth
                 />
               </div>
             )
