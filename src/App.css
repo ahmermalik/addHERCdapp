@@ -24,19 +24,32 @@
 .CoinInfoContainer{
   display: inline-flex;
   text-align: center;
-  padding: 80px 0;
-  width: 30%;
+  padding-top: 80px;
+  width: 25%;
 }
 
 .addTokenPanelContainer{
   min-width: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.App-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  border-style: solid;
+  border-color: #091141;
+  background-color: #091141;
+  padding-top: 35px;
+  padding-bottom: 15px;
+
 }
-
-
+.buttonRow{
+  display:flex;
+  justify-content:center;
+  padding-top:10px;
+}
 
 .downloadButton {
   max-width: 350px;

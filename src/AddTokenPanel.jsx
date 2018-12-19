@@ -103,7 +103,7 @@ class AddTokenPanel extends Component {
           </TableBody>
         </Table>
         </div>
-        <div>
+        <div className="buttonRow">
           <Button
             onClick={() => {
               const { tokenAddress, net } = this.state
@@ -143,6 +143,7 @@ class AddTokenPanel extends Component {
               })
             }}
           >Watch in Wallet</Button>
+         
 
         </div>
 
@@ -157,7 +158,7 @@ class AddTokenPanel extends Component {
             Add a new Address
           </Button>
         </Link>
-
+        <div className="App-footer"></div>
       </div>
     )
   }
