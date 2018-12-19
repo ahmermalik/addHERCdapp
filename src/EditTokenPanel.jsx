@@ -4,14 +4,14 @@ import queryString from 'querystringify'
 import TextField from '@material-ui/core/TextField';
 
 const schema = {
-  title: "Token Details",
+  title: "Address Details",
   properties: {
     tokenName: {type: "string", title: "Token Name", default: "My Token", required: true},
     tokenAddress: {type: "string", title: "Token Address", required: true},
     tokenSymbol: {type: "string", title: "Token Symbol", default: "TKN", required: true},
     tokenDecimals: {type: "number", title: "Token Decimals", default: 18, required: true},
     tokenNet: {type: "number", title: "Token Network Id", default: 1, required: true},
-    tokenImage: {type: "string", title: "Token Image URL (optional)", required: false},
+    // tokenImage: {type: "string", title: "Token Image URL (optional)", required: false},
   }
 };
 
@@ -25,8 +25,7 @@ class EditTokenPanel extends Component {
   render() {
     return (
       <div className="my-form">
-        <h1>Enter Token Details</h1>
-        <p>To create an easy token-suggesting page.</p>
+        <h1>Enter Address</h1>
 
         <div className="form-content">
           { Object.keys(schema.properties).map((key) => {
@@ -44,7 +43,7 @@ class EditTokenPanel extends Component {
           }) }
 
           <Button onClick={this.visitForm}>
-            Create Add Token Page
+            Add Address To Watch List
           </Button>
         </div>
       </div>

@@ -86,11 +86,9 @@ class AddTokenPanel extends Component {
     }
 
     return (
-      <div className="values">
-        <header className="App-header">
-          <img src={tokenImage || logo} className="logo" alt="Coin"/>
-          <h1 className="App-title">Watch {tokenName}</h1>
-        </header>
+      <div className="addTokenPanelContainer">
+          <div className="App-title">Watch {tokenName}</div>
+
         <Table>
           <TableBody>
             <TableRow>
@@ -150,16 +148,12 @@ class AddTokenPanel extends Component {
         <p>{message}</p>
         {error}
 
-        <div className="spacer"></div>
+        {/* <div className="spacer"></div> */}
 
-        <Typography gutterBottom noWrap>
-          {`
-            Create a simple page to watch your token with one click.
-          `}
-        </Typography>
+
         <Link to="/edit">
           <Button>
-            Create Page
+            Add a new Address
           </Button>
         </Link>
 

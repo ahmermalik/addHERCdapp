@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import downloadButton from './download-metamask.png';
+import downloadButton from './img/download-metamask.png';
 
 class DownloadMetaMaskButton extends Component {
   render() {
