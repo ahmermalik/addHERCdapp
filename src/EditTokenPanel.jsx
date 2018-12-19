@@ -25,7 +25,7 @@ class EditTokenPanel extends Component {
   render() {
     return (
       <div className="my-form">
-        <h1>Enter Address</h1>
+        <h1 className="App-title">Enter Address</h1>
 
         <div className="form-content">
           { Object.keys(schema.properties).map((key) => {
