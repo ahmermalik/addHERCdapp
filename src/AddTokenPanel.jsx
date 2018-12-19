@@ -88,7 +88,8 @@ class AddTokenPanel extends Component {
     return (
       <div className="addTokenPanelContainer">
           <div className="App-title">Watch {tokenName}</div>
-
+          
+      <div className="CoinInfoContainer"> 
         <Table>
           <TableBody>
             <TableRow>
@@ -101,7 +102,7 @@ class AddTokenPanel extends Component {
             </TableRow>
           </TableBody>
         </Table>
-
+        </div>
         <div>
           <Button
             onClick={() => {

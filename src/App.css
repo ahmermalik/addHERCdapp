@@ -1,13 +1,13 @@
 .App {
   text-align: center;
   margin: 0 auto;
-  width: 100%;
+  /* width: 100%; */
   font-family: 'Montserrat', sans-serif;
 }
 
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(231, 207, 207);
   height: 150px;
   /* padding: 20px; */
 }
@@ -18,6 +18,14 @@
   border-style: solid;
   border-color: #091141;
   background-color: #091141;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+.CoinInfoContainer{
+  display: inline-flex;
+  text-align: center;
+  padding: 70px 0;
+  width: 30%;
 }
 
 .addTokenPanelContainer{
