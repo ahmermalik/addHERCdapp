@@ -6,7 +6,7 @@
 .App-header {
   background-color: rgb(231, 207, 207);
   height: 150px;
-  /* padding: 20px; */
+
 }
 
 .App-title {
@@ -21,13 +21,14 @@
   border-style: solid;
   border-color: #091141;
   background-color: #091141;
-  padding-top: 80px;
+  padding-top: 65px;
   padding-bottom: 15px;
 }
 .CoinInfoContainer{
   text-align: center;
-  padding: 80px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
   margin-top: 50px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,7 +45,9 @@
   text-align: center;
   margin-top: 150px;
 }
-
+.buttonStyling{
+  text-align:center;
+}
 
 
 .App-footer{
@@ -62,8 +65,11 @@
 }
 .buttonRow{
   display:inline-flex;
-  /* justify-content:center; */
   padding-top:10px;
+}
+.buttonPadding{
+  /* padding-left: 75px;  */
+  padding-right: 50px;
 }
 
 .downloadButton {
@@ -79,4 +85,13 @@
 
 .downloadButton:active {
   transform: scale(0.95);
+}
+
+.hercImg{
+  padding-top: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
 }

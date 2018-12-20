@@ -86,9 +86,9 @@ class AddTokenPanel extends Component {
     }
 
     return (
-      <div className="addTokenPanelContainer">
+      <div>
           <div className="App-title">Watch {tokenName}</div>
-          
+          <img className="hercImg" src={logo} alt="Download MetaMask"/>
       <div className="CoinInfoContainer"> 
         <Table>
           <TableBody>
@@ -102,8 +102,9 @@ class AddTokenPanel extends Component {
             </TableRow>
           </TableBody>
         </Table>
-      
+        </div>
         <div className="buttonRow">
+        <div className="buttonPadding">
           <Button
             onClick={() => {
               const { tokenAddress, net } = this.state
@@ -111,7 +112,7 @@ class AddTokenPanel extends Component {
             }}
             href={etherscanLink.createAccountLink(tokenAddress, net)}
           >View on Etherscan</Button>
-
+</div>
           <Button
             onClick = {async (event) => {
               const provider = window.web3.currentProvider
@@ -145,19 +146,17 @@ class AddTokenPanel extends Component {
           >Watch in Wallet</Button>
          
          </div>
-        </div>
+     
 
         <p>{message}</p>
         {error}
-
-        {/* <div className="spacer"></div> */}
-
-
+<div className="buttonStyling">
         <Link to="/edit">
           <Button>
             Add a new Address
           </Button>
         </Link>
+        </div>
         <div className="App-footer"></div>
       </div>
     )
