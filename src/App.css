@@ -1,34 +1,83 @@
 .App {
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
-  background-color: #222;
+  background-color: rgb(231, 207, 207);
   height: 150px;
-  padding: 20px;
-  color: white;
+
 }
 
 .App-title {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
   font-size: 1.5em;
+  color: white;
+  border-style: solid;
+  border-color: #091141;
+  background-color: #091141;
+  padding-top: 65px;
+  padding-bottom: 15px;
+}
+.CoinInfoContainer{
+  color: red;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  margin-top: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-intro {
-  font-size: large;
+
+.spacer{
+  padding-top: 220px;
+  padding-bottom: 40px;
+  font-size: 125%;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.form-content{
+  text-align: center;
+  margin-top: 150px;
+}
+.buttonStyling{
+  text-align:center;
+}
+
+
+.App-footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  border-style: solid;
+  border-color: #091141;
+  background-color: #091141;
+  padding-top: 25px;
+  padding-bottom: 15px;
+
+}
+.buttonRow{
+  display:inline-flex;
+  padding-top:10px;
+}
+.buttonPadding{
+
+  padding-right: 50px;
 }
 
 .downloadButton {
-  max-width: 350px;
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .downloadButton:hover {
@@ -39,3 +88,11 @@
   transform: scale(0.95);
 }
 
+.hercImg{
+  padding-top: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  
+}

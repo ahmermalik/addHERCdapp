@@ -6,12 +6,11 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
-import Typography from '@material-ui/core/Typography';
 import DownloadMetaMaskButton from './DownloadMetaMaskButton';
 import Eth from 'ethjs-query';
 import etherscanLink from 'etherscan-link';
 import { Link } from 'react-router-dom'
-import logo from './coin.jpg';
+import logo from './img/coin.jpg';
 import queryString from 'querystringify'
 
 const hercAddress = '0x6251583e7d997df3604bc73b9779196e94a090ce';
@@ -24,7 +23,6 @@ class AddTokenPanel extends Component {
         tokenSymbol = 'HERC',
         tokenDecimals = 18,
         tokenAddress = hercAddress,
-        tokenImage = 'https://github.com/AnthemGold/Brand-Assets/blob/master/Herc_Small_BKG.png',
         tokenNet = '1',
         message = '',
         errorMessage = '',
@@ -37,7 +35,6 @@ class AddTokenPanel extends Component {
       tokenSymbol,
       tokenDecimals,
       tokenAddress,
-      tokenImage,
       tokenNet,
       message,
       errorMessage,
@@ -67,7 +64,6 @@ class AddTokenPanel extends Component {
       tokenDecimals,
       tokenNet,
       net,
-      tokenImage,
       tokenAddress,
       message,
       errorMessage,
@@ -86,11 +82,10 @@ class AddTokenPanel extends Component {
     }
 
     return (
-      <div className="values">
-        <header className="App-header">
-          <img src={tokenImage || logo} className="logo" alt="Coin"/>
-          <h1 className="App-title">Watch {tokenName}</h1>
-        </header>
+      <div>
+          <div className="App-title">Watch {tokenName}</div>
+          <img className="hercImg" src={logo} alt="Download MetaMask"/>
+      <div className="CoinInfoContainer"> 
         <Table>
           <TableBody>
             <TableRow>
@@ -103,8 +98,9 @@ class AddTokenPanel extends Component {
             </TableRow>
           </TableBody>
         </Table>
-
-        <div>
+        </div>
+        <div className="buttonRow">
+        <div className="buttonPadding">
           <Button
             onClick={() => {
               const { tokenAddress, net } = this.state
@@ -112,7 +108,7 @@ class AddTokenPanel extends Component {
             }}
             href={etherscanLink.createAccountLink(tokenAddress, net)}
           >View on Etherscan</Button>
-
+</div>
           <Button
             onClick = {async (event) => {
               const provider = window.web3.currentProvider
@@ -124,7 +120,6 @@ class AddTokenPanel extends Component {
                     "address": tokenAddress,
                     "symbol": tokenSymbol,
                     "decimals": tokenDecimals,
-                    "image": tokenImage,
                   },
                 },
                 id: Math.round(Math.random() * 100000),
@@ -144,25 +139,20 @@ class AddTokenPanel extends Component {
               })
             }}
           >Watch in Wallet</Button>
-
-        </div>
+         
+         </div>
+     
 
         <p>{message}</p>
         {error}
-
-        <div className="spacer"></div>
-
-        <Typography gutterBottom noWrap>
-          {`
-            Create a simple page to watch your token with one click.
-          `}
-        </Typography>
+<div className="buttonStyling">
         <Link to="/edit">
           <Button>
-            Create Page
+            Add a new Address
           </Button>
         </Link>
-
+        </div>
+        <div className="App-footer"></div>
       </div>
     )
   }
@@ -173,4 +163,3 @@ AddTokenPanel.contextTypes = {
 }
 
 export default AddTokenPanel;
-

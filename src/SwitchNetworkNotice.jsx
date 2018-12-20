@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import switchNetwork from './switch-network.jpg';
+import switchNetwork from './img/switch-network.jpg';
 
 class SwitchNetworkNotice extends Component {
   render () {
