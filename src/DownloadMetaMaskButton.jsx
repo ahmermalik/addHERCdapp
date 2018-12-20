@@ -17,4 +17,3 @@ class DownloadMetaMaskButton extends Component {
 }
 
 export default DownloadMetaMaskButton
-

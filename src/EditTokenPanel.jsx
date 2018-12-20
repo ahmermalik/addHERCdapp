@@ -81,4 +81,3 @@ class EditTokenPanel extends Component {
 
 
 export default withStyles(styles)(EditTokenPanel);
-

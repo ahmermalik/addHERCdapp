@@ -25,6 +25,7 @@
   padding-bottom: 15px;
 }
 .CoinInfoContainer{
+  color: red;
   text-align: center;
   padding: 10px 0px 0px 0px;
   margin-top: 50px;
@@ -68,7 +69,7 @@
   padding-top:10px;
 }
 .buttonPadding{
-  /* padding-left: 75px;  */
+
   padding-right: 50px;
 }
 

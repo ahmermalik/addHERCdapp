@@ -6,7 +6,6 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
-import Typography from '@material-ui/core/Typography';
 import DownloadMetaMaskButton from './DownloadMetaMaskButton';
 import Eth from 'ethjs-query';
 import etherscanLink from 'etherscan-link';
@@ -24,7 +23,6 @@ class AddTokenPanel extends Component {
         tokenSymbol = 'HERC',
         tokenDecimals = 18,
         tokenAddress = hercAddress,
-        tokenImage = 'https://github.com/AnthemGold/Brand-Assets/blob/master/Herc_Small_BKG.png',
         tokenNet = '1',
         message = '',
         errorMessage = '',
@@ -37,7 +35,6 @@ class AddTokenPanel extends Component {
       tokenSymbol,
       tokenDecimals,
       tokenAddress,
-      tokenImage,
       tokenNet,
       message,
       errorMessage,
@@ -67,7 +64,6 @@ class AddTokenPanel extends Component {
       tokenDecimals,
       tokenNet,
       net,
-      tokenImage,
       tokenAddress,
       message,
       errorMessage,
@@ -124,7 +120,6 @@ class AddTokenPanel extends Component {
                     "address": tokenAddress,
                     "symbol": tokenSymbol,
                     "decimals": tokenDecimals,
-                    "image": tokenImage,
                   },
                 },
                 id: Math.round(Math.random() * 100000),
@@ -168,4 +163,3 @@ AddTokenPanel.contextTypes = {
 }
 
 export default AddTokenPanel;
-
