@@ -21,7 +21,7 @@
   border-style: solid;
   border-color: #091141;
   background-color: #091141;
-  padding-top: 35px;
+  padding-top: 80px;
   padding-bottom: 15px;
 }
 .CoinInfoContainer{
@@ -33,8 +33,11 @@
 }
 
 
-.inputField{
-  /* width: 100%; */
+.spacer{
+  padding-top: 220px;
+  padding-bottom: 40px;
+  font-size: 125%;
+  text-align: center;
 }
 
 .form-content{
@@ -53,7 +56,7 @@
   border-style: solid;
   border-color: #091141;
   background-color: #091141;
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 15px;
 
 }
@@ -64,7 +67,10 @@
 }
 
 .downloadButton {
-  max-width: 350px;
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .downloadButton:hover {

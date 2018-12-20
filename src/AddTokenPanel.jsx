@@ -11,7 +11,7 @@ import DownloadMetaMaskButton from './DownloadMetaMaskButton';
 import Eth from 'ethjs-query';
 import etherscanLink from 'etherscan-link';
 import { Link } from 'react-router-dom'
-import logo from './coin.jpg';
+import logo from './img/coin.jpg';
 import queryString from 'querystringify'
 
 const hercAddress = '0x6251583e7d997df3604bc73b9779196e94a090ce';
